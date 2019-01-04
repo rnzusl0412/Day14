@@ -1,0 +1,70 @@
+자바의 제어문 : 중첩문으로도 사용 된다.
+
+1. 조건문 - if, if ~ else, 다중 if ~ else
+	[형식1]
+		if(조건식) {
+			조건식이 true이면 명령 수행
+		}
+		
+		ex) int a=10;
+			if (a>1){
+				명령~
+			}
+			
+	[형식2]
+		if(조건식) {
+			true 명령
+		} else {
+			false 명령
+		}
+		
+		ex) 만일 숫자가 0보다 크면 양수  그렇지 않으면 음수라도 출력 하자.
+			if ( su > 0 ) {
+				System.out.println("양수");
+			} else {
+				System.out.println("음수");
+			}
+		
+	[형식3]
+		if(조건식) {
+			true 명령
+		} else if(조건식) {
+			true 명령
+		} else if(조건식) {
+			true 명령
+		} else {
+			false 명령
+		}	
+		
+	
+2. 선택문 - switch ~ case 문
+	[형식]
+		switch(변수){		// int + string(jdk7)
+			case 값 : 명령;
+			case 값 : 명령;
+		}
+		//default, break; 
+	
+	ex)	int su = 3;
+	switch(su){		//int + String(jdk7)
+		case 3 : 명령1; 
+				break;
+		case 4 : 명령2;
+		
+	}	// su가 3 일때  명령1 수행
+	
+	switch(su){		//int + String(jdk7)
+		case 4 : 명령1; 
+		case 3 : 명령2;
+		
+	}	// su가 3 일때  명령2 수행
+		
+	
+		
+	
+	
+3. 반복문 	- 입력반복문  while, do ~ while
+		- 출력반복문 for
+		
+4. 제어 키워드 (break; return; continue;)
+
